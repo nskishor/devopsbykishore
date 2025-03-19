@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Thoughts</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+        .footer-section h3 {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 24px;
+            margin-right: 10px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        .pdf-container {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DevOps Thoughts</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="auth">
+        <h2>Login / Signup</h2>
+        <input type="email" id="email" class="auth-input" placeholder="Enter Email">
+        <input type="password" id="password" class="auth-input" placeholder="Enter Password">
+        <button class="auth-btn" onclick="signup()">Sign Up</button>
+        <button class="auth-btn" onclick="login()">Login</button>
+        <button class="auth-btn" onclick="logout()">Logout</button>
+        <p id="user-status"></p>
+    </section>    
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Kishore, a DevOps Trainer with expertise in AWS, Kubernetes, Terraform, and CI/CD.</p>
+        <img src="images/kishore.jpg" alt="Kishore - DevOps Trainer" class="profile-img">
+    </section>
+    
+    <section id="roadmap">
+        <h2>DevOps Roadmap</h2>
+        <p>Follow our structured learning plan to master DevOps tools and practices.</p>
+        <iframe src="pdf/roadmap.pdf" class="pdf-container"></iframe>
+        <br>
+        <a href="pdf/roadmap.pdf" download class="button">Download Roadmap</a>
+    </section>
+    
+    <section id="courses">
+        <h2>Courses</h2>
+        <p>Explore my DevOps courses, designed for hands-on learning and real-world applications.</p>
+        <ul>
+            <li>Comprehensive AWS DevOps Training</li>
+            <li>Terraform for Infrastructure as Code</li>
+            <li>Kubernetes and Helm Mastery</li>
+            <li>CI/CD Pipelines with Jenkins, GitHub Actions, and GitLab CI</li>
+            <li>Security and Compliance in DevSecOps</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out my DevOps case studies and hands-on projects.</p>
+        <ul>
+            <li>Automating AWS Infrastructure with Terraform</li>
+            <li>Deploying a Scalable Kubernetes Cluster</li>
+            <li>Building a Secure CI/CD Pipeline for Microservices</li>
+            <li>Implementing Monitoring with Prometheus and Grafana</li>
+            <li>Optimizing Cloud Costs with Auto-Scaling and Load Balancing</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: kishore@devopsbykishore.com</p>
+    </section>
+    
+    <footer>
+        <div class="footer-section">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kishore-narra" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 5px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24" height="24">
+                    <span style="font-size: 16px; color: #0a66c2;">LinkedIn</span>
+                </a>
+                
+                <a href="https://www.instagram.com/kishorechowdarynarra/?hl=en" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 5px; margin-top: 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" height="24">
+                    <span style="font-size: 16px; color: #C13584;">Instagram</span>
+                </a>                                            
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quicklinks</h3>
+            <ul>
+                <li><a href="#roadmap">DevOps Roadmap</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

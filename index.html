@@ -16,12 +16,9 @@
         }
         header {
             background: #1f1f1f;
-            color: white;
+            color: #fff;
             padding: 20px 0;
             text-align: center;
-        }
-        header h1 {
-            color: white !important;
         }
         nav ul {
             list-style: none;
@@ -99,18 +96,24 @@
             height: 500px;
             border: 1px solid #ccc;
         }
+        .highlight-box {
+            background-color: #e0f7fa;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 5px solid #007bff;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>DevOps by Kishore</h1>
+        <h1 style="color: white;">DevOps by Kishore</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#tools">Tools</a></li>
-                <li><a href="#devopsprinciples">DevOps Principles</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><button id="theme-toggle" class="nav-btn">Dark Mode</button></li>
             </ul>
@@ -129,7 +132,7 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am Kishore, a DevOps Trainer with deep expertise in AWS, Kubernetes, Terraform, and CI/CD automation, TWILLO, MLOps (DevOps + AI).</p>
+        <p>I am Kishore, a DevOps Trainer with deep expertise in AWS, Kubernetes, Terraform, and CI/CD automation,TWILLO,MLops(Devops+AI).</p>
         <img src="/images/kishore.JPG" alt="Kishore - DevOps Trainer" class="profile-img">
     </section>
 
@@ -167,7 +170,7 @@
         </ul>
     </section>
 
-    <section id="devopsprinciples">
+    <section id="principles">
         <h2>DevOps Principles</h2>
         <ul>
             <li>Designing systems that ensure smooth deployments</li>
@@ -175,10 +178,7 @@
             <li>Maintaining reliable operations</li>
             <li>Detecting issues early</li>
             <li>Enabling seamless team collaboration</li>
-        </ul>
-        <p><strong>Tools are Just Enablers:</strong> They assist in achieving these goals, but they don’t define DevOps.</p>
-        <h3>True DevOps Focuses On:</h3>
-        <ul>
+            <li><strong>Tools are Just Enablers:</strong> They assist but don't define DevOps</li>
             <li>Smart automation</li>
             <li>Proactive monitoring</li>
             <li>Efficient scaling</li>
@@ -190,6 +190,11 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:nsk@devopsbykishore.com">nsk@devopsbykishore.com</a></p>
+    </section>
+
+    <section class="highlight-box">
+        <h3>NOTE</h3>
+        <p>DevOps is a continuous learning process. Don't stop learning!</p>
     </section>
 
     <footer>

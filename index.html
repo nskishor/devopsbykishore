@@ -1,193 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps by Kishore</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #222;
-            line-height: 1.6;
-        }
-        header {
-            background: #1f1f1f;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a, .nav-btn {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 12px;
-        }
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        footer {
-            background: #1f1f1f;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 30px 0;
-        }
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin: 15px;
-        }
-        .footer-section h3 {
-            border-bottom: 1px solid #fff;
-            padding-bottom: 8px;
-        }
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .footer-section ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .social-icons img {
-            width: 24px;
-            vertical-align: middle;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-        }
-        .pdf-container {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ccc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps by Kishore</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a, .nav-btn {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #1f1f1f;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 30px 0;
+    }
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin: 15px;
+    }
+    .footer-section h3 {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 8px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .social-icons img {
+      width: 24px;
+      vertical-align: middle;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+    .pdf-container {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
+    }
+    /* New Styling for DevOps Philosophy */
+    #philosophy {
+      background-color: #eef6fb;
+      padding: 20px;
+      margin: 30px auto;
+      border-radius: 8px;
+    }
+    #philosophy ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+    #philosophy ul li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 style="color: white;">DevOps by Kishore</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle" class="nav-btn">Dark Mode</button></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>DevOps by Kishore</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="nav-btn">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="auth">
-        <h2>Login / Signup</h2>
-        <input type="email" id="email" placeholder="Enter Email">
-        <input type="password" id="password" placeholder="Enter Password">
-        <button onclick="signup()">Sign Up</button>
-        <button onclick="login()">Login</button>
-        <button onclick="logout()">Logout</button>
-        <p id="user-status"></p>
-    </section>
+  <section id="auth">
+    <h2>Login / Signup</h2>
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+    <p id="user-status"></p>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am Kishore, a DevOps Trainer with deep expertise in AWS, Kubernetes, Terraform, and CI/CD automation,TWILLO,MLops(Devops+AI).</p>
-        <img src="/images/kishore.JPG" alt="Kishore - DevOps Trainer" class="profile-img">
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Kishore, a DevOps Trainer with deep expertise in AWS, Kubernetes, Terraform, and CI/CD automation, TWILLO, MLOps (DevOps + AI).</p>
+    <img src="/images/kishore.JPG" alt="Kishore - DevOps Trainer" class="profile-img">
+  </section>
 
-    <section id="roadmap">
-        <h2>DevOps Roadmap</h2>
-        <p>A comprehensive guide to mastering DevOps skills and tools step-by-step.</p>
-        <iframe src="pdf/roadmap.pdf" class="pdf-container"></iframe>
-        <br>
-        <a href="pdf/roadmap.pdf" download><button>Download Roadmap</button></a>
-    </section>
+  <!-- New Section Added -->
+  <section id="philosophy">
+    <h2>DevOps Philosophy</h2>
+    <ul>
+      <li>Designing systems that ensure smooth deployments</li>
+      <li>Scaling infrastructure effortlessly</li>
+      <li>Maintaining reliable operations</li>
+      <li>Detecting issues early</li>
+      <li>Enabling seamless team collaboration</li>
+    </ul>
+    <p><strong>Tools are Just Enablers</strong><br>
+    They assist in achieving these goals, but they don’t define DevOps.</p>
+    <h3>True DevOps Focuses On:</h3>
+    <ul>
+      <li>Smart automation</li>
+      <li>Proactive monitoring</li>
+      <li>Efficient scaling</li>
+      <li>Strong security</li>
+      <li>Continuous improvement</li>
+    </ul>
+  </section>
 
-    <section id="courses">
-        <h2>Courses</h2>
-        <ul>
-            <li>Comprehensive AWS DevOps Training</li>
-            <li>Terraform for Infrastructure as Code</li>
-            <li>Kubernetes and Helm Mastery</li>
-            <li>CI/CD with Jenkins, GitHub Actions & GitLab</li>
-            <li>DevSecOps: Security and Compliance</li>
-        </ul>
-    </section>
+  <section id="roadmap">
+    <h2>DevOps Roadmap</h2>
+    <p>A comprehensive guide to mastering DevOps skills and tools step-by-step.</p>
+    <iframe src="pdf/roadmap.pdf" class="pdf-container"></iframe>
+    <br>
+    <a href="pdf/roadmap.pdf" download><button>Download Roadmap</button></a>
+  </section>
 
-    <section id="tools">
-        <h2>DevOps Tools</h2>
-        <ul>
-            <li><strong>Git & GitHub:</strong> Version control & collaboration</li>
-            <li><strong>Jenkins:</strong> CI/CD automation</li>
-            <li><strong>Docker:</strong> Containerization</li>
-            <li><strong>Kubernetes:</strong> Container orchestration</li>
-            <li><strong>Ansible:</strong> Configuration management</li>
-            <li><strong>Terraform:</strong> Infrastructure as Code</li>
-            <li><strong>Shell/Python:</strong> Scripting & automation</li>
-            <li><strong>AWS:</strong> Cloud infrastructure</li>
-            <li><strong>Monitoring:</strong> Prometheus, Grafana, CloudWatch</li>
-        </ul>
-    </section>
+  <section id="courses">
+    <h2>Courses</h2>
+    <ul>
+      <li>Comprehensive AWS DevOps Training</li>
+      <li>Terraform for Infrastructure as Code</li>
+      <li>Kubernetes and Helm Mastery</li>
+      <li>CI/CD with Jenkins, GitHub Actions & GitLab</li>
+      <li>DevSecOps: Security and Compliance</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:nsk@devopsbykishore.com">nsk@devopsbykishore.com</a></p>
-    </section>
+  <section id="tools">
+    <h2>DevOps Tools</h2>
+    <ul>
+      <li><strong>Git & GitHub:</strong> Version control & collaboration</li>
+      <li><strong>Jenkins:</strong> CI/CD automation</li>
+      <li><strong>Docker:</strong> Containerization</li>
+      <li><strong>Kubernetes:</strong> Container orchestration</li>
+      <li><strong>Ansible:</strong> Configuration management</li>
+      <li><strong>Terraform:</strong> Infrastructure as Code</li>
+      <li><strong>Shell/Python:</strong> Scripting & automation</li>
+      <li><strong>AWS:</strong> Cloud infrastructure</li>
+      <li><strong>Monitoring:</strong> Prometheus, Grafana, CloudWatch</li>
+    </ul>
+  </section>
 
-    <footer>
-        <div class="footer-section">
-            <h3>Connect with Me</h3>
-            <a href="https://www.linkedin.com/in/kishore-narra" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width:18px;height:18px;" alt="LinkedIn"> LinkedIn
-            </a><br><br>
-            <a href="https://www.instagram.com/kishorechowdarynarra/?hl=en" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" style="width:18px;height:18px;" alt="Instagram"> Instagram
-            </a>
-        </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#roadmap">DevOps Roadmap</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#tools">Tools</a></li>
-            </ul>
-        </div>
-    </footer>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nsk@devopsbykishore.com">nsk@devopsbykishore.com</a></p>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <div class="footer-section">
+      <h3>Connect with Me</h3>
+      <a href="https://www.linkedin.com/in/kishore-narra" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width:18px;height:18px;" alt="LinkedIn"> LinkedIn
+      </a><br><br>
+      <a href="https://www.instagram.com/kishorechowdarynarra/?hl=en" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" style="width:18px;height:18px;" alt="Instagram"> Instagram
+      </a>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#roadmap">DevOps Roadmap</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#tools">Tools</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

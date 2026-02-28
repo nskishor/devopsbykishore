@@ -1,257 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps by Kishore</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps by Kishore</title>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f8;
-            color: #222;
-            line-height: 1.6;
-        }
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
 
-        header {
-            background: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
+/* Header */
+header {
+    background: #0d1b2a;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 10px 0 0 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-        nav ul li {
-            margin: 0 12px;
-        }
+nav ul li {
+    margin: 8px 15px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-        section {
-            background: white;
-            margin: 30px auto;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-            text-align: center;
-        }
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        h2 {
-            margin-top: 0;
-        }
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
 
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            margin-top: 15px;
-        }
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
-        .pdf-container {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ccc;
-        }
+.btn {
+    background: white;
+    color: #007bff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+}
 
-        .highlight-box {
-            background: #e0f7fa;
-            border-left: 5px solid #007bff;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 6px;
-        }
+/* Sections */
+section {
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
 
-        footer {
-            background: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 40px;
-        }
+/* Cards */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-        ul {
-            text-align: left;
-            display: inline-block;
-        }
+.card {
+    background: #f8fbff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
 
-        .contact-link {
-            display: block;
-            margin: 8px 0;
-            font-size: 16px;
-        }
+ul {
+    text-align: left;
+    display: inline-block;
+}
 
-        .contact-link a {
-            color: #007bff;
-            text-decoration: none;
-        }
+/* Contact */
+.contact-link {
+    margin: 10px 0;
+}
 
-        .contact-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
+.contact-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <div class="container">
-        <h1>DevOps by Kishore</h1>
+        <h2>DevOps by Kishore</h2>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#courses">Courses</a></li>
-                <li><a href="#ai-devops">AI in DevOps</a></li>
+                <li><a href="#features">Why Join</a></li>
+                <li><a href="#ai">DevOps + AI</a></li>
                 <li><a href="#tools">Tools</a></li>
-                <li><a href="#principles">Principles</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
+<!-- Hero -->
+<div class="hero">
+    <h1>Become a DevOps Engineer in 90 Days</h1>
+    <p>AWS | Kubernetes | Terraform | CI/CD | DevOps + AI</p>
+    <a href="#contact" class="btn">Enroll Now</a>
+    <a href="mailto:nsk@devopsbykishore.com?subject=DevOps Training Enquiry" class="btn">Free Demo</a>
+</div>
+
 <div class="container">
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am Kishore, a DevOps Trainer with expertise in AWS, Kubernetes, Terraform, CI/CD,
-            Twilio, and MLOps (DevOps + AI).
-        </p>
-        <img src="/images/kishore.JPG" alt="Kishore" class="profile-img">
-    </section>
+<!-- Why Join -->
+<section id="features">
+    <h2>Why Join This Training?</h2>
 
-    <!-- Roadmap -->
-    <section id="roadmap">
-        <h2>DevOps Roadmap</h2>
-        <p>Step-by-step guide to become a DevOps Engineer.</p>
-        <iframe src="pdf/roadmap.pdf" class="pdf-container"></iframe>
-    </section>
-
-    <!-- Courses -->
-    <section id="courses">
-        <h2>Courses</h2>
-        <ul>
-            <li>AWS DevOps Training</li>
-            <li>Terraform (Infrastructure as Code)</li>
-            <li>Kubernetes & Helm</li>
-            <li>CI/CD with Jenkins & GitHub Actions</li>
-            <li>DevSecOps</li>
-            <li>DevOps + AI (AIOps & MLOps)</li>
-        </ul>
-    </section>
-
-    <!-- AI Section -->
-    <section id="ai-devops">
-        <h2>AI in DevOps (AIOps & MLOps)</h2>
-
-        <p>
-            AI helps DevOps teams detect issues early, predict failures,
-            automate operations, and build intelligent self-healing systems.
-        </p>
-
-        <h3>Why AI in DevOps?</h3>
-        <ul>
-            <li>Anomaly detection before failures</li>
-            <li>Automatic root cause analysis</li>
-            <li>Predictive scaling</li>
-            <li>Alert noise reduction</li>
-            <li>Self-healing infrastructure</li>
-        </ul>
-
-        <div class="highlight-box">
-            DevOps automates systems. AI makes them intelligent.
-            Future = DevOps + AI.
-        </div>
-    </section>
-
-    <!-- Tools -->
-    <section id="tools">
-        <h2>DevOps Tools</h2>
-        <ul>
-            <li>Git & GitHub</li>
-            <li>Jenkins</li>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-            <li>Ansible</li>
-            <li>Terraform</li>
-            <li>Shell / Python</li>
-            <li>AWS</li>
-            <li>Prometheus & Grafana</li>
-        </ul>
-    </section>
-
-    <!-- Principles -->
-    <section id="principles">
-        <h2>DevOps Principles</h2>
-        <ul>
-            <li>Automation First</li>
-            <li>Continuous Integration & Delivery</li>
-            <li>Infrastructure as Code</li>
-            <li>Monitoring & Feedback</li>
-            <li>Security (DevSecOps)</li>
-            <li>Continuous Improvement</li>
-        </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-
-        <div class="contact-link">
-            📧 Email:
-            <a href="mailto:nsk@devopsbykishore.com?subject=DevOps Training Enquiry">
-                nsk@devopsbykishore.com
-            </a>
+    <div class="features">
+        <div class="card">
+            <h3>Real-Time Projects</h3>
+            <p>Hands-on DevOps projects with real industry scenarios.</p>
         </div>
 
-        <div class="contact-link">
-            🔗 LinkedIn:
-            <a href="https://www.linkedin.com/in/kishore-narra" target="_blank">
-                linkedin.com/in/kishore-narra
-            </a>
+        <div class="card">
+            <h3>Placement Support</h3>
+            <p>Resume preparation, interview questions, and guidance.</p>
         </div>
 
-        <div class="contact-link">
-            📷 Instagram:
-            <a href="https://www.instagram.com/kishorenarransk/" target="_blank">
-                instagram.com/kishorenarransk
-            </a>
+        <div class="card">
+            <h3>Cloud Labs</h3>
+            <p>Practice on AWS, Kubernetes, and CI/CD pipelines.</p>
         </div>
-    </section>
 
-    <section class="highlight-box">
-        DevOps is a continuous learning journey. Keep upgrading your skills! 🚀
-    </section>
+        <div class="card">
+            <h3>Lifetime Support</h3>
+            <p>Doubt clarification and career guidance anytime.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Courses -->
+<section id="courses">
+    <h2>Course Curriculum</h2>
+    <ul>
+        <li>Linux & Shell Scripting</li>
+        <li>Git & GitHub</li>
+        <li>Docker & Kubernetes</li>
+        <li>Terraform (Infrastructure as Code)</li>
+        <li>Jenkins & CI/CD Pipelines</li>
+        <li>AWS (EC2, S3, VPC, IAM, EKS)</li>
+        <li>Monitoring (Prometheus & Grafana)</li>
+        <li>DevSecOps</li>
+        <li>DevOps + AI (AIOps & MLOps)</li>
+    </ul>
+</section>
+
+<!-- AI Section -->
+<section id="ai">
+    <h2>DevOps + AI (Future Skill)</h2>
+    <p>
+        Learn how AI is used in DevOps for anomaly detection, auto-scaling,
+        intelligent monitoring, and self-healing infrastructure.
+    </p>
+    <ul>
+        <li>AI-based monitoring</li>
+        <li>Failure prediction</li>
+        <li>Root cause analysis</li>
+        <li>Kubeflow & MLOps basics</li>
+    </ul>
+</section>
+
+<!-- Tools -->
+<section id="tools">
+    <h2>Tools You Will Master</h2>
+    <ul>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>Terraform</li>
+        <li>Jenkins</li>
+        <li>Ansible</li>
+        <li>GitHub Actions</li>
+        <li>Prometheus & Grafana</li>
+    </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact & Enrollment</h2>
+
+    <div class="contact-link">
+        📧 Email:
+        <a href="mailto:nsk@devopsbykishore.com?subject=DevOps Training Enquiry">
+            nsk@devopsbykishore.com
+        </a>
+    </div>
+
+    <div class="contact-link">
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/in/kishore-narra" target="_blank">
+            LinkedIn Profile
+        </a>
+    </div>
+
+    <div class="contact-link">
+        📷 Instagram:
+        <a href="https://www.instagram.com/kishorenarransk/" target="_blank">
+            Instagram Profile
+        </a>
+    </div>
+
+    <br>
+    <a href="mailto:nsk@devopsbykishore.com?subject=DevOps Training Enquiry" class="btn">
+        Apply Now
+    </a>
+</section>
 
 </div>
 
 <footer>
-    <p>
-        © 2026 DevOps by Kishore |
-        <a href="https://www.linkedin.com/in/kishore-narra" target="_blank" style="color:#4da3ff;">LinkedIn</a> |
-        <a href="https://www.instagram.com/kishorenarransk/" target="_blank" style="color:#4da3ff;">Instagram</a>
-    </p>
+    © 2026 DevOps by Kishore |
+    <a href="https://www.linkedin.com/in/kishore-narra" target="_blank" style="color:#4da3ff;">LinkedIn</a> |
+    <a href="https://www.instagram.com/kishorenarransk/" target="_blank" style="color:#4da3ff;">Instagram</a>
 </footer>
 
 </body>
